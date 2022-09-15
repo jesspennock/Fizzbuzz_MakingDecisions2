@@ -5,6 +5,8 @@ var arr = [10,20,30,40,50,60]
 /*
   Create a variable named 'firstItem' and set it equal to the first value of the 'arr' array.
 */
+let firstItem = arr[0]
+console.log(firstItem)
 
 //Code Here
 
@@ -15,6 +17,9 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
+let lastItemRemoved = arr.pop
+arr.pop()
+console.log(arr)
 
 ////////// PROBLEM 3 //////////
 
@@ -27,8 +32,9 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-
-
+for(let i = 0; i < family.length; i++){
+  console.log(family[i])
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -41,6 +47,12 @@ let evensArr = []
   Use a for-loop to iterate through each number in the 'nums' array, if the number is even, append it to the 'evensArr'.
 */
 
+for (i=0; i < nums.length; i++) {
+  if (nums[i] % 2 === 0){
+    evensArr.push(nums[i])
+  }
+  console.log(evensArr)
+}
 //Code Here
 
 
@@ -56,6 +68,21 @@ var score = 74
 */
 
 //Code Here
+if (score >= 90){
+  console.log ("A")
+}
+  else if (score > 80 && score <= 89){
+  console.log ("B")
+}
+  else if (score > 70 && score <= 79) {
+  console.log ("C")
+}
+  else if (score > 60 && score <= 69) {
+  console.log ("D")
+}
+  else {
+  console.log ("F")
+}
 
 
 ////////// Intermediate Problems //////////
